@@ -1,5 +1,12 @@
 const blogPosts = [
     {
+        title: 'PHOTOGRAPHER PORTFOLIO V2',
+        time: 'HTML5 · CSS3 · JS ',
+        image: 'img/maria-3d.jpg', 
+        link: 'https://photo-portfolio-3js.vercel.app/',
+        target: '_blank' 
+    },
+    {
         title: 'THE MAGIC PORTAL',
         time: 'three.js · JS',
         image: 'img/portal1.jpg', 
@@ -7,17 +14,10 @@ const blogPosts = [
         target: '_blank'
     },
     {
-        title: 'PHOTOGRAPHER PORTFOLIO',
+        title: 'PHOTOGRAPHER PORTFOLIO V1',
         time: 'HTML5 · CSS3 · JS',
         image: 'img/bymariadelrio.jpg', 
         link: 'https://bymariadelrio-portfolio.vercel.app/',
-        target: '_blank' 
-    },
-    {
-        title: 'THIS PORTFOLIO WITH NO 3D',
-        time: 'HTML5 · CSS3 · JS ',
-        image: 'img/PORTFOLIO.jpg', 
-        link: 'https://iggy-portfolio.netlify.app',
         target: '_blank' 
     },
     {
