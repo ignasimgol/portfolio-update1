@@ -126,4 +126,4 @@ function copiarCorreo() {
 }
 
 // Agregar el evento de clic al enlace con ID "correo"
-document.getElementById("correo").addEventListener("click", copiarCorreo);s
+document.getElementById("correo").addEventListener("click", copiarCorreo);
