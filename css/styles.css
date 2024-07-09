@@ -90,13 +90,13 @@ h2:hover {
     touch-action: manipulation;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
+  }
   
-.button:hover {
+  .button:hover {
     background-color: #F5CB5C;
-}
-
-.button:active {
+  }
+  
+  .button:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
@@ -117,7 +117,7 @@ h2:hover {
     transition: 0.3s;
     color: #111;
 }
-
+  
 .profile__social-link{
     font-size: 1.25rem;
     color: var(--title-color);
@@ -162,6 +162,8 @@ h2:hover {
 /* tot */
 
 
+
+
 p{
     width: 70%;
     margin: 2rem 0;
@@ -190,7 +192,7 @@ section{
     height: 500vh;
 }
 
-sticky{
+.sticky{
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -215,6 +217,7 @@ img{
     object-fit: cover;
     object-position: center;
 }
+
 
 /* ggggggggggggggg */
 
@@ -340,6 +343,7 @@ body.dark-theme .sliding-text {
     font-size: 0.9rem;
 }
 
+
 .copied-text {
     display: none;
     position: absolute;
@@ -438,6 +442,7 @@ h5{
     }
 }
 
+
 /* QUERYSSSSS  */
 @media only screen and (min-width: 1550px) {
 
@@ -504,7 +509,6 @@ h5{
     .container{
         padding-bottom: 0;
     }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -595,6 +599,7 @@ h5{
     .post__details p {
         font-size: 0.7rem;
     }
+
     .copied-text {
         display: none;
         position: absolute;
@@ -633,4 +638,3 @@ footer {
     background-color: #3E505B;
     color: #eaf1ec;
 }
-
