@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Iggy's Webpage</title>
+    
+</head>
+<body>
+
+    <canvas class="webgl"></canvas>
+
+    <main>
+
+        <section class="section_0">
+            <div class="redes-header">
+                <ul class="profile__social">
+
+                    <a class="profile__social-link" id="correo" href="#">
+                        <i class="ri-mail-line correo" data-correo="ignasimgol@gmail.com" onclick="copiarCorreo()"></i>
+                        <span class="copied-text" id="copiedText">Copied</span>
+                    </a>
+            
+                    <a href="https://www.linkedin.com/in/ignasi-muñoz-gol-81557515b" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iggy.three/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@iggy.three" target="_blank" class="profile__social-link">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                    <a href="https://github.com/ignasimgol" target="_blank" class="profile__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    
+                </ul> 
+
+                <i class="ri-moon-line profile__social-link" change-theme id="theme-button"></i>
+
+            </div>
+
+            <h1>IGGY'S PORTFOLIO</h1>
+            <h4>By Ignasi Muñoz, Front End Developer and Creative Designer</h4>
+            <h6>Press the key "H" to hide and show the colors menú and change the colors of the objects and particles. </h4>
+
+        </section>
+        
+    
+        <section class="section_1">
+            <div class="sliding-text">
+                <h5>Front End Developer · Creative · 3D ·</h5>
+                <h5>Front End Developer · Creative · 3D ·</h5>
+                <h5>Front End Developer · Creative · 3D ·</h5>
+                <h5>Front End Developer · Creative · 3D ·</h5>
+                <h5>Front End Developer · Creative · 3D ·</h5>
+           </div>
+
+            <div class="container">
+                <h2 class="revealing-text">ABOUT</h2>
+                <p class="revealing-text">Hey! I'm Ignasi Muñoz. Welcome to my portfolio. I hope you enjoy my projects. Contact me if you have any question or if you want to work together!</p>
+                <p class="revealing-text">With over a decade of dedicated coaching experience in basketball 🏀, I've embraced challenges, fostered teamwork, and honed invaluable skills such as responsibility, attention to detail, and active listening. My journey has taken me from courtsides in various countries, including Finland 🇫🇮, where I seamlessly adapted to diverse environments and collaborated with individuals from all walks of life.</p>
+                <p class="revealing-text">Driven by an insatiable curiosity and an unyielding desire to learn, I've ventured into the world of programming. Currently pursuing a Master's in Front-End Development at Universitat Oberta de Catalunya, I am channeling my passion for creativity and innovation into mastering the intricacies of web development.</p>
+                <p class="revealing-text">As an individual with an innate talent for visual expression and a keen interest in the dynamic realm of 3D design, I am further enhancing my skills through a course in Three.js, paving the way for groundbreaking digital creations.</p>         
+            </div>
+        </section>
+
+        <section class="section_2" id="blog">
+            <div class="blog__hero">
+                <h2 class="text__reveal">PROJECTS</h2>
+            </div>
+        </section>
+
+        <section class="section_3">
+            <div class="container">
+
+                <h2 class="revealing-text">EXPERIENCE</h2>
+
+                <div class="experience1">
+                   <h4 class="revealing-text">Currently studying</h4>
+                    <ul>
+                        <li class="revealing-text"><a href="https://www.uoc.edu/ca/estudis/masters/master-universitari-desenvolupament-llocs-aplicacions-web" target="_blank">Màster universitari Online de Desenvolupament de Llocs i Aplicacions Web</a></li>
+                        <li class="revealing-text"><a href="https://threejs-journey.com/?c=g1&gad_source=1&gclid=CjwKCAiAg9urBhB_EiwAgw88mdn6b-RiwcJlg5wx8F9fFNkwQg0ReG-CDp79dVlaA1bW2h8Hn5WRQBoCY5kQAvD_BwE#table-of-content" target="_blank">Three.js Journey</a></li>
+                    </ul> 
+                </div>
+
+                <div class="experience2">
+                    <h4 class="revealing-text">Finished Studies</h4>
+                    <ul>
+                        <li class="revealing-text">ESO and Bachillerato Education Masters</li>
+                        <li class="revealing-text">Sports Science and Physicall Activity Bachelor's Degree</li>
+                        <li class="revealing-text">Basketball Coach Spanish Level 2</li>
+                    </ul>
+                </div>
+
+                <div class="experience3">
+                    <h4 class="revealing-text">Lenguages and Programing Lenguages / Stack and abilities </h4>
+                    <ul>
+                        <li class="revealing-text">Native Spanish and Catalan </li>
+                        <li class="revealing-text">English - Professional Level</li>
+                        <li class="revealing-text">HTML5, CSS3, JS and BOOTSTRAP - Good level</li>
+                        <li class="revealing-text">React, Tailwind - Learning</li>
+                        <li class="revealing-text">Blender, Adobe Ilustrator, Adobe Photoshop - Learning</li>
+
+
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/three.js"></script>
+</body>
+</html>

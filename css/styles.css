@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+html, body, main {
+    width: 100%;
+    height: 100%;
+    background-color: #eaf1ec;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+
+
+.info{
+    display:flex;
+    justify-content:left;
+    
+}
+
+.info button{
+    margin-right: 30px;
+}
+
+/* social media y cv*/
+
+/* colors */
+
+
+.section_0{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 10rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    color: transparent;
+}
+
+h1:hover {
+    font-size: 10rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #26413C;
+    color: transparent;
+}
+
+h2{
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    color: transparent;
+}
+
+h2:hover {
+    font-size: 5rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #26413C;
+    color: transparent;
+}
+
+/* botó */
+
+.button {
+    background-color: #95D9C3;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.button:hover {
+    background-color: #F5CB5C;
+}
+
+.button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      min-width: 120px;
+      padding: 0 10px;
+    }
+  }
+
+/* ////////////////// */
+
+.profile__social{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #111;
+}
+
+.profile__social-link{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: .3s;
+    text-decoration: none;
+}
+
+.bigger-icon {
+    font-size: 2rem;
+}
+  
+.profile__social-link:hover{
+    color: #95D9C3;
+}
+
+.cv{
+    padding: 2px 15px 2px 15px;
+    text-align: center;
+    color: #111;
+    background-color: #eaf1ec;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cv:hover{
+    background-color: #95D9C3;
+    color: #eaf1ec;
+}
+
+.copied-text {
+    display: none;
+    position: absolute;
+    top: 322px;
+    right: 300px;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: gray;
+  }
+
+/* tot */
+
+
+p{
+    width: 70%;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+section{
+    position: relative;
+    height: 85vh;
+}
+
+.section_3{
+    height: 110vh;
+}
+
+
+
+.container{
+    padding: 5rem;
+    padding-bottom: 0;
+    max-width: 100%;
+}
+
+
+.sticky_parent{
+    height: 500vh;
+}
+
+sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+/* .scroll_section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 500vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+} */
+
+img{
+    width: 400px;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ggggggggggggggg */
+
+#theme-button {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #111;
+}
+
+#theme-button:hover {
+    color: #95D9C3; /* Cambia el color en el hover */
+
+}
+
+body.dark-theme #theme-button {
+    color: #fff; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme .profile__social-link {
+    color: #fff; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme h1 {
+    -webkit-text-stroke-color: #fff; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme h2 {
+    -webkit-text-stroke-color: #fff; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme #theme-button:hover {
+    color: #95D9C3; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme .profile__social-link:hover {
+    color: #95D9C3; /* Cambia el color del ícono en modo oscuro */
+}
+
+body.dark-theme {
+    background-color: #162724;
+    color: #f6f0f0;
+}
+
+body.dark-theme .section_3 ul li a{
+    color: #f6f0f0;
+}
+
+body.dark-theme, body.dark-theme section {
+    background-color: #162724;
+}
+
+body.dark-theme, body.dark-theme .sticky_parent {
+    background-color: #162724;
+}
+
+body.dark-theme .sliding-text {
+    background-color: #3E505B;
+    -webkit-text-stroke-color: #26413C;
+}
+
+/* blog */
+
+#blog{
+    height: 400%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog__hero,
+.blog__post{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    max-width: var(--max-width);
+    overflow: hidden;
+}
+
+.post{
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.057);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: transform;
+}
+
+.post__image__container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.blog__post__img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.post__details{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    justify-content: space-between;
+}
+
+.post__details p {
+    font-size: 0.9rem;
+}
+
+.copied-text {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 150px;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: rgb(79, 76, 76);
+}
+
+.section_0 h6 {
+    margin-top: 1rem;
+    font-size:0.9rem;
+    font-style: italic;
+    
+}
+
+.experience1 ul,
+.experience2 ul,
+.experience3 ul {
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
+
+.experience1 h4,
+.experience2 h4,
+.experience3 h4 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.section_3 ul li a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* TEXT QUE APAREIX ANIMACIÓ CSS */
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.revealing-text {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-text;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-text;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 40%;
+}
+
+
+/* SLIDING TEXT */
+
+.sliding-text{
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    box-sizing: border-box;
+    background-color: #26413C;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+h5{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FFF;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding: 0 2rem;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* QUERYSSSSS  */
+@media only screen and (min-width: 1550px) {
+
+    h1 {
+        font-size: 13rem;
+        margin-top: 2.5rem;
+    }
+    h1:hover {
+        font-size: 13rem;
+    }
+
+    section {
+        height: 90vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    h1 {
+        font-size: 10rem;
+        margin-top: 2.5rem;
+    }
+
+    h1:hover {
+        font-size: 10rem;
+    }
+
+    section {
+        height: 90vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 8rem;
+        margin-top: 2.5rem;
+    }
+
+    h1:hover {
+        font-size: 8rem;
+    }
+
+    section {
+        height: 90vh;
+    }
+
+    .section_1 {
+        height: 110vh;
+    }
+
+    .section_3 {
+        height: 100vh;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 2.5rem;
+    }
+    h1:hover {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h2:hover {
+        font-size: 3rem;
+    }
+
+    h4 {
+        margin-top: 2rem;
+    }
+    h5 {
+        font-size: 2.5rem; 
+    }
+    .button {
+        font-size: 0.8rem;
+    }
+    .profile__social-link {
+        font-size: 0.8rem;
+    }
+    .sliding-text {
+        margin-top: 8rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    .blog__hero {
+        height: 80vh;
+    }
+
+
+    section {
+        height: 40vh;
+    }
+
+    .section_1 {
+        padding-top: 3.5rem;
+    }
+
+    .section_3 {
+        height: 100vh;
+    }
+
+    .container{
+        padding: 3rem;
+    }
+
+    p{
+        width: 90%;
+    }
+
+    h4 {
+        font-size: .9rem;
+        margin-top: 0.8rem;
+    }
+
+    ul li {
+        font-size: .8rem; 
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .post{
+        width: 90%;
+    }
+    .post__details{
+        margin-top: 0.3rem;
+        margin-left: 2rem;
+    }
+    .post__details p {
+        font-size: 0.7rem;
+    }
+    .copied-text {
+        display: none;
+        position: absolute;
+        top: 22px;
+        right: 150px;
+        padding: 4px 8px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        font-size: 12px;
+        color: rgb(79, 76, 76);
+    }
+
+    .blog__hero {
+       margin-top: 40rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 250px) and (max-width: 573px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    h1:hover {
+        font-size: 4rem;
+    }
+
+    section {
+        height: 37vh;
+    }
+}
+
+footer {
+    display: flex;
+    background-color: #3E505B;
+    color: #eaf1ec;
+}
+
