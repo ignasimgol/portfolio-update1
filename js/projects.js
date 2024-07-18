@@ -1,7 +1,7 @@
 const blogPosts = [
     {
         title: 'PHOTOGRAPHER PORTFOLIO V2',
-        time: 'HTML5 · CSS3 · JS ',
+        time: 'HTML5 · CSS3 · THREE JS · REACT ',
         image: 'img/maria-3d.png', 
         link: 'https://photo-portfolio-3js.vercel.app/',
         target: '_blank' 
@@ -25,6 +25,13 @@ const blogPosts = [
         time: 'HTML5 · CSS3 · JS · THREE JS',
         image: 'img/laptop.png', 
         link: 'https://iggy-3d-portfolio.vercel.app',
+        target: '_blank' 
+    },
+    {
+        title: 'SIMPLE TIMER/ALARM/TABATA',
+        time: 'HTML5 · CSS3 · JS',
+        image: 'img/clock.png', 
+        link: 'https://clock-eight-delta.vercel.app/',
         target: '_blank' 
     }
 ];
